@@ -1,0 +1,24 @@
+.inputContainer
+    display: flex
+    flex-direction: column
+    gap: 8px
+
+.label
+    color: var(--muted)
+    font-size: 13px
+    font-weight: 600
+
+.input
+    width: 100%
+    padding: 13px 14px
+    color: var(--text)
+    background: var(--background)
+    border: 1px solid var(--border)
+    border-radius: 8px
+    font: inherit
+    transition: border-color 0.2s, box-shadow 0.2s
+
+    &:focus
+        outline: none
+        border-color: var(--primary)
+        box-shadow: 0 0 0 3px #f7258533

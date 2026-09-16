@@ -1,0 +1,9 @@
+<div class="inputContainer">
+  <label [for]="inputName" class="label">{{ label }}</label>
+  <input 
+    class="input"
+    [type]="type" 
+    [value]="value" 
+    [placeholder]="placeholder" 
+    (input)="onInput($event)" />
+</div>

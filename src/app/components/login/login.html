@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="imageContainer">
+        <img src="/login.png" alt="imagem da pagina de login" class="image" width="450" height="450">
+    </div>
+    <div class="formContainer">
+        <form [formGroup]="form" class="form">
+            <h1 class="title">Login</h1>
+            <app-input-form
+            formControlName="email"
+            inputName="nome"
+            type="text"
+            label="Email"
+            placeholder="jose@gmail.com"
+        ></app-input-form>
+            <app-input-form
+            formControlName="password"
+            inputName="password"
+            type="password"
+            label="Senha"
+            placeholder="Informe sua senha aqui..."
+        ></app-input-form>
+        
+            <button type="submit" (click)="login()" class="button">Login</button>  
+            <button type="submit" (click)="navigate()" class="link">Register</button>  
+
+        </form>
+    </div>
+</div>
