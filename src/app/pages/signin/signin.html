@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="imageContainer">
+        <img src="/login.png" alt="imagem da pagina de login" class="image" width="450" height="450">
+    </div>     
+    <div class="formContainer">
+        <form [formGroup]="form" class="form">
+            <h1 class="title">Register</h1>
+            <app-input-form
+                formControlName="nome"
+                inputName="nome"
+                type="text"
+                label="Name"
+                placeholder="José Carlos"
+            ></app-input-form>
+            <app-input-form
+                formControlName="email"
+                inputName="email"
+                type="email"
+                label="Email"
+                placeholder="jose@gmail.com"
+            ></app-input-form>
+            <app-input-form
+                formControlName="telefone"
+                inputName="telefone"
+                type="text"
+                label="Phone"
+                placeholder="99 99999-9999"
+            ></app-input-form>
+            <app-input-form
+                formControlName="password"
+                inputName="password"
+                type="password"
+                label="Password"
+                placeholder="Informe Sua Senha..."
+            ></app-input-form>
+        
+            <button type="submit" (click)="signin()" class="button">Sign in</button>
+            <button (click)="navigate()" class="link">Do you already have an account? Back to Login!</button>  
+        </form>
+    </div>
+</div>

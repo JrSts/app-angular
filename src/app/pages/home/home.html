@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="headerDashboard">
+        <div class="headerInfo">
+            <span class="labelInfo">Visão Geral</span>
+            <h1>Dashboard</h1>
+            <span>Acompanhe o trabalho dos motoristas e as viagens</span>
+        </div>
+        <div class="headerInfo">
+            <span class="labelInfo">Período</span>
+            <select class="select">
+                <option>Hoje</option>
+                <option>Esta Semana</option>
+                <option>Este Mês</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="containerCards">
+        <app-simple-dashboard-card 
+            [estatistica]="'+5%'"
+            [value]="'5'"
+            [title]="'Motoristas Ocupados'"
+        >
+        </app-simple-dashboard-card>
+
+        <app-simple-dashboard-card 
+            [estatistica]="'+8%'"
+            [value]="'50'"
+            [title]="'Viagens Marcadas'"
+        >
+        </app-simple-dashboard-card>
+
+        <app-simple-dashboard-card 
+            [estatistica]="'Média atual'"
+            [value]="'3.4'"
+            [title]="'Passageiros por carro'"
+        >
+        </app-simple-dashboard-card>
+
+        <app-simple-dashboard-card 
+            [estatistica]="'Boa ocupação'"
+            [value]="'75%'"
+            [title]="'Taxa de ocupação'"
+        >
+        </app-simple-dashboard-card>
+    </div>
+
+    <div class="statisticsAlertCard">
+        <div class="statisticsCard">
+            <app-statistics-card></app-statistics-card>
+        </div>
+        <div class="alertsCard">
+            <app-alerts-card></app-alerts-card>
+        </div>
+    </div>
+
+    <div class="scheduleCard">
+        <app-travel-schedule />
+    </div>
+</div>

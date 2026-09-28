@@ -1,0 +1,65 @@
+.container
+    display: flex
+    min-height: calc(100vh - 30px)
+    width: calc(100vw - 120px)
+    flex-direction: column
+    padding: 20px 0 20px 20px
+    gap: 20px
+
+.headerDashboard
+    display: flex
+    justify-content: space-between    
+    align-items: center
+
+.headerInfo
+    display: flex
+    flex-direction: column
+    gap: 5px
+
+.labelInfo
+    color: var(--primary)
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: bold
+
+.select
+    padding: 8px
+    background-color: var(--surface)
+    color: var(--text)
+    border-radius: 5px
+
+.containerCards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 20px
+
+.statisticsCard
+    display: flex
+    flex: 6
+    min-width: 0
+
+    app-statistics-card
+        width: 100%
+
+.alertsCard
+    display: flex
+    flex: 4
+    min-width: 0
+
+    app-alerts-card
+        width: 100%
+
+.statisticsAlertCard
+    display: flex
+    width: 100%
+    gap: 20px
+
+.scheduleCard
+    display: flex
+    width: 100%
+    flex-direction: column
+
+    app-travel-schedule
+        width: 100%
+        min-width: 0
