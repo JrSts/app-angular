@@ -1,0 +1,14 @@
+<div class="scheculeItemContainer">
+    <div class="infos">
+        <span class="time">{{travel.horario}}</span>
+        <span class="description">{{travel.cidade}}</span>
+        <span class="description">{{travel.destino}}</span>
+    </div>
+    <div class="statusTravel">
+        @if(false) {
+            <span class="confirmada">{{travel.status}}</span> 
+        } @else {
+            <span class="pendente">{{travel.status}}</span> 
+        }
+    </div>
+</div>

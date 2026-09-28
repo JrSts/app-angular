@@ -1,0 +1,40 @@
+.containerSchecule
+    display: flex
+    border: 1px solid var(--border)
+    border-radius: 8px
+    padding: 20px
+    flex-direction: column
+
+.headerSchedule
+    display: flex
+    justify-content: space-between 
+
+.label
+    color: var(--primary)
+    font-weight: bold
+    text-transform: uppercase
+    font-size: 14px
+
+.link
+    color: var(--primary)
+    font-weight: bold
+    font-size: 14px
+    text-decoration: none
+    cursor: pointer
+
+    &:hover
+        color: var(--muted)
+
+.title
+    font-size: 20px
+    font-weight: bold
+    margin-bottom: 15px
+
+.scheduleList
+    display: flex
+    width: 100%
+    flex-direction: column
+    
+
+    app-travel-schedule-item
+        flex: 1

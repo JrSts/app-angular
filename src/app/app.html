@@ -1,10 +1,10 @@
 @if (logado()) {
     <div class="mainContainer">
-        <app-header></app-header>
         <div class="section">
+            <app-header></app-header>
             <router-outlet />
-            <app-footer></app-footer>
         </div>
+        <app-footer></app-footer>
     </div>
 } @else {
     <router-outlet />

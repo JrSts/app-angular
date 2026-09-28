@@ -1,0 +1,14 @@
+<div class="containerSchecule">
+    <div class="headerSchedule">
+        <span class="label">Agenda</span>
+        <a href="/viagens" class="link">Ver Todas</a>
+    </div>
+    <span class="title"> Proximas Viagens </span>
+
+    <div class="scheduleList">
+        @for (travel of travelList; track travel.id) {
+            <app-travel-schedule-item [travel]="travel" />
+        }
+    </div>
+
+</div>
