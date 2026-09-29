@@ -1,0 +1,120 @@
+:host
+    display: block
+    width: 100%
+    min-width: 0
+
+.container
+    display: flex
+    flex-direction: column
+    gap: 10px
+    border: 1px solid var(--border)
+    border-radius: 8px
+    background-color: var(--surface)
+    padding: 20px
+
+.carHeader
+    display: flex
+    justify-content: space-between
+
+.carInfo, .driverInfo
+    display: flex
+    flex-direction: column
+
+.driver
+    width: 100%
+    display: flex
+    gap: 20px
+    align-items: center
+    padding: 12px 5px
+    border-bottom: 1px solid var(--border)
+
+.image
+    background: var(--primary)
+    padding: 10px 
+    border-radius: 50%
+    color: var(--text)
+    font-weight: bold
+    font-size: 16px
+
+.ocupation
+    display: flex
+    flex-direction: column
+    padding: 5px
+    gap: 8px
+
+.ocupationInfo
+    display: flex
+    justify-content: space-between
+
+.progress
+    width: 100%
+    height: 12px
+    background: var(--border)
+    border-radius: 999px
+    overflow: hidden
+    margin-bottom: 15px 
+
+    &__fill
+        height: 100%
+        border-radius: 999px
+        background: linear-gradient(90deg, var(--primary), var(--secondary))
+        transition: width .3s ease
+
+.travels
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid var(--border)
+    border-top: 1px solid var(--border)
+    padding: 15px 5px
+
+.travel
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.travelInfo
+    display: flex
+    gap: 20px
+    align-items: center
+
+.infoDestiny
+    display: flex
+    flex-direction: column
+
+.label
+    color: var(--primary)
+    font-weight: bold
+    text-transform: uppercase
+
+.title
+    font-size: 18px
+    font-weight: semibold
+
+.subtitleUppercase
+    font-size: 13px
+    text-transform: uppercase
+    font-weight: bold
+    color: var(--muted)
+    letter-spacing: 1px
+
+.driverName
+    font-size: 16px
+    font-weight: bold
+
+
+.subtitle
+    font-size: 13px
+    font-weight: bold
+    color: var(--muted)
+    letter-spacing: 1px
+
+.status
+    display: flex
+    padding: 6px 20px
+    border: 1px solid var(--border)
+    border-radius: 50px
+    align-items: center
+    justify-content: center
+    font-size: 13px
+    color: var(--muted)
+    font-weight: bold
