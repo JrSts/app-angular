@@ -11,5 +11,6 @@ export class SimpleDashboardCard {
   @Input() estatistica: string = "";
   @Input() value: string = "";
   @Input() title: string = "";
+  @Input() src: string = "";
 
 }
